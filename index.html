@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Potfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/06a1c7f563.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1><span>F</span>elix.</h1>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#potfolio">Potfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times icons" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars icons" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I am <span>Felix</span> Hagan from Ghana</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Creative, self-starting, and ambitious Front-End Developer with a
+              year oexperience. I specialize in website development for both
+              responsive e-commerce and a portfolio site, as well a simple image
+              slider using the react framework. I thrive in fast-paced,
+              collaborative environments and love turning design concepts into
+              functional, user-friendly interfaces.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>web developement <br /><span>image slider</span></li>
+                <li>
+                  web developement <br />
+                  <span>Load products using REST Api</span>
+                </li>
+                <!-- <li></li> -->
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  Training <br /><span
+                    >Two years training experience with Amalitech Ghana</span
+                  >
+                </li>
+                <!-- <li></li> -->
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>web developement <br /><span>image slider</span></li>
+                <li>
+                  web developement <br />
+                  <span>Load products using REST Api</span>
+                </li>
+                <!-- <li></li> -->
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  Senior High School <br /><span
+                    >January 2009 - June 2013 <br />
+                    Nsaba senior High <br />General Science Option</span
+                  >
+                </li>
+                <li>
+                  University <br />
+                  <span
+                    >August 2017 - June 2019 <br />Takoradi Technical University
+                    <br />HND in Mechanical Enigneering</span
+                  >
+                </li>
+                <!-- <li></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Responsive Web Design</h2>
+            <p>
+              Expertise in creating visually appealing and functional websites
+              that work seamlessly across different devices and screen sizes.
+              The ability to design responsive layouts using HTML, CSS, and
+              JavaScript.
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Front-End Developement</h2>
+            <p>
+              Gained the experience modify design mockups into interactive web
+              pages. I am proficient in front-end technologies such as React and
+              Angular. I am very committed to writing good, clean and
+              maintainable code.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Website Optimization</h2>
+            <p>
+              I have gained in optimizing websites for speed and performance.
+              also techniques like image compression, lazy loading, and
+              minification. Also with the my knowledge in Web Optimization I
+              also have the ability to improve page load times and enhance user
+              satisfaction.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- potfolio -->
+    <div id="potfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/tic-tac-toe.webp" alt="" />
+            <div class="layer">
+              <h3>TIC TAC TOE</h3>
+              <p>
+                A fun game that nurishes the mind and keeps you on your toes.
+                Building a tic-tac-toe game involves key programming concepts
+                like loops, conditionals, and data structures. It’s a great way
+                to reinforce your understanding of these fundamental principle
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Load Products</h3>
+              <p>
+                This web application was created with the react frame work. It
+                functionality is to load products on the web page. It created
+                using REST Api
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Image Slider</h3>
+              <p>
+                The web application was created to show a simple functionality
+                of a sliding image on the screen and also to pratice more on the
+                usage of the React frame work
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>felixNkrumah@gmail.com</p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i>0503143448</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-slack"></i></a>
+            </div>
+            <a href="images/felix hagan.docx" download class="btn btn-2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="email@gmail.com"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button class="btn btn-2" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyrigt © Felix.</p>
+      </div>
+    </div>
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-links");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sideMenu = document.getElementById("side-menu");
+
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz8sZqoOsfTqiXke5TZFfQGggMGNGMp9ZLIX5diLwbU70Eg8PLlwDnrNcnSpfEjfche/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
